@@ -1,0 +1,52 @@
+* {
+    /* border: 1px dotted blue; */
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?weather'); /* unsplash API */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "@microsoft YaHei Ui Light";
+}
+.card {
+    width: 400px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #faf4ed6b;
+    /* box-shadow: 0 0 20px 2px #faf4ed79; */
+    font-size: x-large;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+
+.search {
+    /* width: 70%; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+input[type=text] {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 70%;
+    padding: 8px;
+
+    
+}
+.search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
