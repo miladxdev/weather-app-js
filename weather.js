@@ -15,6 +15,14 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        console.log(name + description);
+        console.log(`${name} ${description} ${temp}`);
+
+        document.querySelector(".city").innerText = name;
+        document.querySelector(".temp").innerText = `${temp}°C`;
+        document.querySelector(".icon").src = "icon/static/cloudy-day-1.svg";
+        document.querySelector(".description").innerText = description;
+        document.querySelector(".humidity").innerText = `humidity: ${humidity}%`;
+        document.querySelector(".wind").innerText = `wind: ${speed} km/h`;
+
     }
 };
