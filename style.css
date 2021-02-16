@@ -6,7 +6,8 @@
 
 body {
     height: 100vh;
-    background-image: url('https://source.unsplash.com/1600x900/?weather'); /* unsplash API */
+    background-image: url('https://source.unsplash.com/1600x900/daily?weather'); /* unsplash API */
+    /* background: #48a3e0; */
     display: flex;
     align-items: center;
     justify-content: center;
