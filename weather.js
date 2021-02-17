@@ -15,8 +15,7 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        console.log(`${name} ${description} ${temp}`);
-
+        // console.log(`${name} ${description} ${temp}`);
         document.querySelector(".city").innerText = name;
         document.querySelector(".temp").innerText = `${temp}°C`;
         document.querySelector(".icon").src = "icon/static/cloudy-day-1.svg";
@@ -24,7 +23,7 @@ let weather = {
         document.querySelector(".humidity").innerText = `humidity: ${humidity}%`;
         document.querySelector(".wind").innerText = `wind: ${speed} km/h`;
 
-        document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${name})`; //unsplash API
+        // document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${name})`; //unsplash API
     },
 
     search: function () {

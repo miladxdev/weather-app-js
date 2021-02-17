@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/weather-icons/css/weather-icons.css">
     <title>weather-app</title>
 </head>
 <body>
     <div class="card">
+
         <div class="search">
             <input type="text" class="search-bar">
-            <button>O</button>
+            <button></button>
         </div>
-        <div class="info">
-            <h1 class="city">Fuladshahr</h1>
+        
+        <h2 class="city">Fuladshahr</h2>
+
+        <div class="weather">
+            <!-- <img src="icon/static/cloudy-night-1.svg" alt="" class="icon"> -->
+            <i class="wi wi-day-cloudy-windy" style="font-size: 90px"></i>
             <div class="temp">24°C</div>
-            <img src="" alt="" class="icon">
+        </div>
+
+        <div class="info">    
             <div class="description">sunny</div>
             <div class="humidity">humidity: 50%</div>
             <div class="wind">wind: 4km/h</div>
         </div>
+        
     </div>
 <script src="weather.js"></script>    
 </body>
