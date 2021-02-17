@@ -5,29 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="node_modules/weather-icons/css/weather-icons.css">
+    <link rel="stylesheet" href="/weather-icons/css/weather-icons.css">
     <title>weather-app</title>
 </head>
 <body>
     <div class="card">
 
         <div class="search">
-            <input type="text" class="search-bar">
-            <button></button>
+            <input type="text" class="search-bar"></input>
+            <button><i class="wi wi-cloud-refresh"></i></button>
         </div>
         
-        <h2 class="city">Fuladshahr</h2>
+        <h2 class="city">Los antos</h2>
 
         <div class="weather">
             <!-- <img src="icon/static/cloudy-night-1.svg" alt="" class="icon"> -->
-            <i class="wi wi-day-cloudy-windy" style="font-size: 90px"></i>
-            <div class="temp">24°C</div>
+            <i class="wi wi-day-rain"></i>
+            <div class="temp">24°c
+            </div>
+            <div class="temp-max">
+                <i class="wi wi-direction-up">27°c</i>
+                <br>
+                <i class="wi wi-direction-down">4°c</i>
+            </div>
         </div>
-
+        <div class="week">
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>San</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wen</span>
+            <span>Thu</span>
+            <i class="wi wi-day-rain"></i>
+            <i class="wi wi-day-sunny"></i>
+            <i class="wi wi-day-cloudy"></i>
+            <i class="wi wi-day-snow"></i>
+            <i class="wi wi-day-cloudy-gusts"></i>
+            <i class="wi wi-day-showers"></i>
+            <i class="wi wi-day-fog"></i>
+            <span>27°c</span>
+            <span>18°c</span>
+            <span>12°c</span>
+            <span>15°c</span>
+            <span>19°c</span>
+            <span>20°c</span>
+            <span>14°c</span>
+        </div>
         <div class="info">    
             <div class="description">sunny</div>
             <div class="humidity">humidity: 50%</div>
-            <div class="wind">wind: 4km/h</div>
+            <div class="wind">wind: 4 km/h</div>
         </div>
         
     </div>
