@@ -20,7 +20,7 @@ let weather = {
         // console.log(`${name} ${description} ${temp}`);
         document.querySelector(".city").innerText = name;
         document.querySelector(".temp").innerText = `${Math.floor(temp)}°C`;
-        // document.querySelector(".icon").src = "icon/static/cloudy-day-1.svg";
+        document.querySelector("#w-icon").src = `http://openweathermap.org/img/wn/${icon}@4x.png`;
         document.querySelector("#feels-like").innerText = feels_like+' °C';
         document.querySelector("#country").innerText = country;
         document.querySelector("#humidity").innerText = humidity + "%";
@@ -34,7 +34,7 @@ let weather = {
     },
 
     search: function () {
-        // this.fetchWeather('isfahan');
+        // this.fetchWeather('new york');
         this.fetchWeather(document.querySelector(".search-bar").value);
     }
 };
