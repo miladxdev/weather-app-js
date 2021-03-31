@@ -13,7 +13,7 @@ let weather = {
     displayWeather: function (data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
-        const { temp, humidity } = data.main;
+        const { temp, temp_min, temp_max, feels_like, humidity, pressure } = data.main;
         const { speed } = data.wind;
         const { country } = data.sys;
         console.log(country);
@@ -21,15 +21,20 @@ let weather = {
         document.querySelector(".city").innerText = name;
         document.querySelector(".temp").innerText = `${Math.floor(temp)}°C`;
         // document.querySelector(".icon").src = "icon/static/cloudy-day-1.svg";
-        document.querySelector(".description").innerText = country;
-        document.querySelector(".humidity").innerText = `humidity: ${humidity}%`;
-        document.querySelector(".wind").innerText = `wind: ${speed} km/h`;
+        document.querySelector("#feels-like").innerText = feels_like+' °C';
+        document.querySelector("#country").innerText = country;
+        document.querySelector("#humidity").innerText = humidity + "%";
+        document.querySelector("#wind").innerText = speed + ' km/h';
+        document.querySelector("#pressure").innerText = pressure;
+        document.querySelector("#temp-min").innerText = temp_min+'°C';
+        document.querySelector("#temp-max").innerText = temp_max+'°C';
+        document.querySelector("#description").innerText = description;
 
         // document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${name})`; //unsplash API
     },
 
     search: function () {
-
+        // this.fetchWeather('isfahan');
         this.fetchWeather(document.querySelector(".search-bar").value);
     }
 };

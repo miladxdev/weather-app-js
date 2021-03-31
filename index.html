@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/weather-icons/css/weather-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>weather-app</title>
 </head>
 <body>
@@ -13,21 +15,24 @@
 
         <div class="search">
             <input type="text" class="search-bar"></input>
-            <button><i class="wi wi-cloud-refresh"></i></button>
+            <button><i class="fa fa-search"></i></button>
         </div>
 
         <div class="region">
             <h2 class="city">...</h2>
-            <span id="country">Iran</span>
+            <span id="country">...</span>
         </div>
         
         <div class="weather">
+            <div class="temp">...</div>
             <div class="icon">
                 <i class="wi wi-day-rain"></i>
+                
             </div>
-            <div class="temp">...</div>
         </div>
 
+        <small id="description"></small>
+        
         <!-- <div class="week">
             <span>Fri</span>
             <span>Sat</span>
@@ -54,38 +59,39 @@
         
         <div class="details">    
             <div>
-                <i class="wi wi-thermometer"></i>
-                <span style="padding: 5px">feels like</span>
-                <span id="feels-like">...</span>
+                <i class="fa fa-thermometer-three-quarters"></i>
+                <span>feels like</span>
+                <span  id="feels-like">...</span>
             </div>
             <div class="wind">
-                <i class="wi wi-strong-wind"></i>
-                <span style="padding: 5px">wind</span>
+                <i class="fa fa-wind"></i>
+                <span>wind</span>
                 <span id="wind">...</span>
             </div>
+            <div>
+                <i class="fa fa-arrow-up"></i>
+                <span>max temp</span>
+                <span id="temp-max">...</span>
+            </div>
             <div class="humidity">
-                <i class="wi wi-humidity"></i>
-                <span style="padding: 5px">humidity</span>
+                <i class="fa fa-tint"></i>
+                <span>humidity</span>
                 <span id="humidity">...</span>
             </div>
             <div>
-                <i class="wi wi-barometer"></i>
-                <span style="padding: 5px">pressure</span>
+                <i class="fa fa-tachometer-alt"></i>
+                <span>pressure</span>
                 <span id="pressure">...</span>
             </div>
+            
             <div>
-                <i class="wi wi-day-showers"></i>
-                <span style="padding: 5px">visibility</span>
-                <span id="visibility">...</span>
-            </div>
-            <div>
-                <i class="wi wi-day-fog"></i>
-                <span style="padding: 5px">dew-point</span>
-                <span id="dew-point">...</span>
+                <i class="fa fa-arrow-down"></i>
+                <span>min temp</span>
+                <span id="temp-min">...</span>
             </div>
         </div>
         
     </div>
-<script src="weather.js"></script>    
+<script src="app.js"></script>    
 </body>
 </html>
