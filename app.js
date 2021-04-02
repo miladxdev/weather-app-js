@@ -16,8 +16,7 @@ let weather = {
         const { temp, temp_min, temp_max, feels_like, humidity, pressure } = data.main;
         const { speed } = data.wind;
         const { country } = data.sys;
-        console.log(country);
-        // console.log(`${name} ${description} ${temp}`);
+
         document.querySelector(".city").innerText = name;
         document.querySelector(".temp").innerText = `${Math.floor(temp)}°C`;
         document.querySelector("#w-icon").src = `http://openweathermap.org/img/wn/${icon}@4x.png`;
@@ -51,3 +50,6 @@ document.querySelector(".search-bar")
         weather.search();
     }
 });
+
+// default city
+weather.fetchWeather('isfahan');
