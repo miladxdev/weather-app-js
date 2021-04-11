@@ -5,9 +5,9 @@ let weather = {
     
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city + "&units=metric&appid=" + this.apiKey)
-        .then(response => response.json()) // get response and parse to json
-        .then(data => this.displayWeather(data)); // Data is an object. ( data.main.temp => returns temp)
-        
+        .then( response => response.json()) // get response and parse to json
+        .then( data => this.displayWeather(data)) // Data is an object. ( data.main.temp => returns temp)
+        .catch( error => alert('Error: Can\'t get data\n'+ error));
     },
 
     displayWeather: function (data) {
