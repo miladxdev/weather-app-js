@@ -4,15 +4,15 @@ let weather = {
 
     apiKey: "359f0831c53fa20ed2ff23f00ae0904e",
 
-    fetchWeather: function (city) {
+    fetchWeather(city) {
         displayLoading();
-        fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + this.apiKey)
-            .then(response => response.json()) // get response and parse to json
-            .then(data => this.displayWeather(data)) // get Data object
-            .catch(error => alert('Error: Can\'t get data\n' + error));
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`)
+            .then(response => response.json())
+            .then(data => this.displayWeather(data))
+            .catch(error => alert(error));
     },
 
-    displayWeather: function (data) {
+    displayWeather(data) {
         hideLoading();
         const { name } = data;
         const { icon, description } = data.weather[0];
@@ -31,26 +31,21 @@ let weather = {
         document.querySelector("#temp-min").innerText = temp_min + '°C';
         document.querySelector("#temp-max").innerText = temp_max + '°C';
         document.querySelector("#description").innerText = description;
-
         // document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${name})`; //unsplash API
     },
 
-    search: function () {
+    search() {
         this.fetchWeather(document.querySelector(".search-bar").value);
     }
 };
 
 document.querySelector(".search button")
-    .addEventListener("click", function () {
-        weather.search();
-    });
+    .addEventListener("click", () => weather.search());
 
 
 document.querySelector(".search-bar")
-    .addEventListener("keyup", function (event) {
-        if (event.key == "Enter") {
-            weather.search();
-        }
+    .addEventListener("keyup", event => {
+        if (event.key == "Enter") weather.search();
     });
 
 // default city
