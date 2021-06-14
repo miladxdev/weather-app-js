@@ -79,6 +79,7 @@
 
 ## About The Project
 
+screenshot
 ![Screen Shot](./img/screenshot.png)
 
 Here's a blank template to get started:
@@ -102,6 +103,7 @@ To get a local copy up and running follow these simple steps.
 This is an example of how to list things you need to use the software and how to install them.
 
 - npm
+
   ```sh
   npm install npm@latest -g
   ```
@@ -162,9 +164,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Milad Gharibi - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [github.com/miladxdev/weather-app-js](https://github.com/miladxdev/weather-app-js)
 
 <!-- ACKNOWLEDGEMENTS -->
 
