@@ -29,8 +29,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/miladxdev/weather-app-js">
+    <img src="./img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">WEATHER APP</h3>
@@ -79,7 +79,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](img/screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](/img/screenshot.png)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
