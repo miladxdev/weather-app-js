@@ -1,9 +1,41 @@
-import { displayLoading, hideLoading, errorText, animateNewData } from "./script.js";
+// import { displayLoading, hideLoading, errorText, animateNewData } from "./script.js";
+
+const loader = document.querySelector("#loading");
+
+function displayLoading() {
+  loader.classList.add("display");
+
+  setTimeout(() => {
+    loader.classList.remove("display");
+  }, 15000);
+}
+
+function hideLoading() {
+  loader.classList.remove("display");
+}
+
+// error message
+function errorText(message) {
+  const status = document.getElementById("status");
+  status.style.opacity = "1";
+  status.innerHTML = message;
+  setTimeout(() => (status.style.opacity = "0"), 4000);
+}
+
+function animateNewData() {
+  const details = document.querySelectorAll(".details > div");
+  let e = 1;
+  for (let i = 0; i < details.length; i++) {
+    details[i].style.opacity = "0.1";
+    setTimeout(() => (details[i].style.opacity = "1"), 140 * e);
+    e++;
+  }
+}
 
 let weather = {
   apiKey: "359f0831c53fa20ed2ff23f00ae0904e",
 
-  fetchWeather(city) {
+  fetchWeather: function (city) {
     displayLoading();
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`)
       .then((response) => response.json())
@@ -11,7 +43,7 @@ let weather = {
       .catch((error) => this.handleErrors(error));
   },
 
-  displayWeather(data) {
+  displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, temp_min, temp_max, feels_like, humidity, pressure } = data.main;
@@ -29,16 +61,17 @@ let weather = {
     document.querySelector("#temp-min").innerText = temp_min + "°C";
     document.querySelector("#temp-max").innerText = temp_max + "°C";
     document.querySelector("#description").innerText = description;
-    // document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${name})`; //unsplash API
+    // document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${description})`; //unsplash API
     hideLoading();
     animateNewData();
   },
 
-  search() {
+  search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
   },
 
-  handleErrors(error) {
+  handleErrors: function (error) {
+    hideLoading();
     if (!navigator.onLine) {
       errorText("error: you are offline");
     } else if (document.querySelector(".search-bar").value == "") {
@@ -57,11 +90,3 @@ document.querySelector(".search-bar").addEventListener("keyup", (event) => {
 
 // default city
 weather.fetchWeather("isfahan");
-
-// function animate() {
-//   const details = document.querySelectorAll(".details span");
-//   for (let i = 0; i < details.length; i++) {
-//     details[i].style.trasform = "traslateX(-50px)";
-//     setTimeout(() => (details[i].style.trasform = "traslateX(0)"), 500);
-//   }
-// }

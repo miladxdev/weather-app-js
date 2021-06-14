@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-image: url("background/river.jpg");
+  background-image: url("background/rain.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ body {
   height: 700px;
   padding: 10px 20px;
   border-radius: 40px;
-  background: rgba(15, 15, 30, 0.15);
+  background: rgba(15, 15, 30, 0.2);
   font-size: 24px;
   color: white;
   text-align: center;
@@ -35,14 +35,18 @@ body {
   /* border: 1px solid red; */
   position: absolute;
   top: 74px;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  padding: 2px;
+  border-radius: 8px;
+  background: rgba(255, 63, 63, 0.4);
+
   text-align: center;
   font-family: monospace;
   font-size: 18px;
   opacity: 0;
-  color: rgb(145, 101, 208);
-  color: rgb(255, 100, 100);
+  color: white;
   transition: 0.5s;
 }
 
@@ -98,6 +102,7 @@ body {
 .weather .icon {
   position: absolute;
   right: 0;
+  opacity: 0.9;
 }
 #description {
   font-size: 20px;
@@ -122,7 +127,7 @@ body {
   height: 100px;
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1));
   border-radius: 10px;
-  transition: 1s;
+  transition: opacity 1s;
   overflow: hidden;
 }
 .details * span {

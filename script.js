@@ -21,18 +21,12 @@ export function errorText(message) {
   setTimeout(() => (status.style.opacity = "0"), 4000);
 }
 
-// export function newDataAnimate() {
-//   const details = document.querySelectorAll(".details span");
-//   for (let i = 0; i < details.length; i++) {
-//     details[i].style.color = "lime";
-//     setTimeout(() => (details[i].style.color = "white"), 500);
-//   }
-// }
-
 export function animateNewData() {
   const details = document.querySelectorAll(".details > div");
+  let e = 1;
   for (let i = 0; i < details.length; i++) {
     details[i].style.opacity = "0.1";
-    setTimeout(() => (details[i].style.opacity = "1"), 400);
+    setTimeout(() => (details[i].style.opacity = "1"), 140 * e);
+    e++;
   }
 }
