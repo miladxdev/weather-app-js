@@ -50,7 +50,7 @@
 </p>
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
+<details>
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
@@ -75,6 +75,7 @@
   </ol>
 </details>
 
+<br>
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -91,7 +92,7 @@ Here's a blank template to get started:
 - [HTML]()
 - [CSS]()
 - [JavaScript]()
-
+- API
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -140,7 +141,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/miladxdev/weather-app-js_name/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -179,15 +180,15 @@ Project Link: [github.com/miladxdev/weather-app-js](https://github.com/miladxdev
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/miladxdev/weather-app-js.svg?style=for-the-badge
+[contributors-url]: https://github.com/miladxdev/weather-app-js/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/miladxdev/weather-app-js.svg?style=for-the-badge
+[forks-url]: https://github.com/miladxdev/weather-app-js/network/members
+[stars-shield]: https://img.shields.io/github/stars/miladxdev/weather-app-js.svg?style=for-the-badge
+[stars-url]: https://github.com/miladxdev/weather-app-js/stargazers
+[issues-shield]: https://img.shields.io/github/issues/miladxdev/weather-app-js.svg?style=for-the-badge
+[issues-url]: https://github.com/miladxdev/weather-app-js/issues
+[license-shield]: https://img.shields.io/github/license/miladxdev/weather-app-js.svg?style=for-the-badge
+[license-url]: https://github.com/miladxdev/weather-app-js/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://www.linkedin.com/in/milad-gharibi-507ba3214/
