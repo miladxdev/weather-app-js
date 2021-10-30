@@ -15,12 +15,12 @@
   <h3 align="center">WEATHER APP</h3>
 
   <p align="center">
-    Weather app using vanilla javascript
+    weather app using vanilla javascript
     <br />
     <a href="https://openweathermap.org/api"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/miladxdev/weather-app-js">View Demo</a>
+    <a href="https://miladxdev.github.io/weather-app-js/">View Demo</a>
     ·
     <a href="https://github.com/miladxdev/weather-app-js/issues">Report Bug</a>
     ·
@@ -63,7 +63,7 @@
 
 ![Screen Shot](./img/screenshot.png)
 
-- [Live preview ☝](https://github.com/miladxdev/weather-app-js)
+### [Live preview ☝](https://miladxdev.github.io/weather-app-js/)
 
 This project is a weather web app. you can check your current location weather or search any country or city 🌞
 
