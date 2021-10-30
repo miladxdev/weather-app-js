@@ -60,9 +60,12 @@
 ## About The Project
 
 `screenshot`
+
 ![Screen Shot](./img/screenshot.png)
 
-This project is a weather web app. you can check your current location weather or search any country or city.
+- [Live preview ☝](https://github.com/miladxdev/weather-app-js)
+
+This project is a weather web app. you can check your current location weather or search any country or city 🌞
 
 ### Built With
 
@@ -95,6 +98,8 @@ To get a local copy up and running follow these simple steps.
 
     }
    ```
+
+<hr>
 
 ## Roadmap
 
