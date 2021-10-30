@@ -1,24 +1,3 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -30,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/miladxdev/weather-app-js">
-    <img src="./img/logo.png" alt="Logo" width="200" height="200">
+    <img src="./img/logo.png" alt="Logo" width="180" height="180">
   </a>
 
   <h3 align="center">WEATHER APP</h3>
@@ -38,7 +17,7 @@
   <p align="center">
     Weather app using vanilla javascript
     <br />
-    <a href="https://github.com/miladxdev/weather-app-js"><strong>Explore the docs »</strong></a>
+    <a href="https://openweathermap.org/api"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/miladxdev/weather-app-js">View Demo</a>
@@ -80,34 +59,22 @@
 
 ## About The Project
 
-screenshot
+`screenshot`
 ![Screen Shot](./img/screenshot.png)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+This project is a weather web app. you can check your current location weather or search any country or city.
 
 ### Built With
 
 - [HTML]()
 - [CSS]()
 - [JavaScript]()
-- API
+- API (open weather)
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -128,16 +95,6 @@ This is an example of how to list things you need to use the software and how to
 
     }
    ```
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<!-- ROADMAP -->
 
 ## Roadmap
 
@@ -165,17 +122,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Milad Gharibi - [@twitter_handle](https://twitter.com/twitter_handle) - email
+`Milad Gharibi` - [@twitter](https://twitter.com/twitter_handle) - miladxgh@gmail.com
 
 Project Link: [github.com/miladxdev/weather-app-js](https://github.com/miladxdev/weather-app-js)
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-- []()
-- []()
-- []()
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

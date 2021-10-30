@@ -6,12 +6,12 @@
 
 body {
   height: 100vh;
-  background-image: url("./img/bg/background.jpg");
+  background-image: url("./img/bg/river.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "poppins", "@microsoft YaHei Ui Light";
+  font-family: "poppins", sans-serif;
 }
 
 .card {
