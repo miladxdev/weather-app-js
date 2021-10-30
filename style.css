@@ -1,5 +1,4 @@
 * {
-  /* border: 1px dotted blue; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-image: url("background/river.jpg");
+  background-image: url("./img/bg/background.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -20,11 +19,11 @@ body {
   height: 700px;
   padding: 10px 20px;
   border-radius: 40px;
-  background: rgba(15, 15, 30, 0.2);
+  background: rgba(15, 15, 30, 0.1);
   font-size: 24px;
   color: white;
   text-align: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -38,10 +37,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
-  padding: 2px;
+  padding: 4px;
   border-radius: 8px;
   background: rgba(255, 63, 63, 0.4);
-
   text-align: center;
   font-family: monospace;
   font-size: 18px;
@@ -133,8 +131,6 @@ body {
 .details * span {
   display: block;
   transition: 1s;
-  /* transform: translateY(-20px); */
-  /* animation: success 1s; */
 }
 .description {
   text-transform: capitalize;
