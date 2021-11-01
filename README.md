@@ -30,7 +30,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -63,16 +63,16 @@
 
 ![Screen Shot](./img/screenshot.png)
 
-### [Live preview ☝](https://miladxdev.github.io/weather-app-js/)
+### [LIVE DEMO ☝](https://miladxdev.github.io/weather-app-js/)
 
-This project is a weather web app. you can check your current location weather or search any country or city 🌞
+This project is a weather web application. you can check your current location weather or search any country or city 🌞
 
 ### Built With
 
-- [HTML]()
-- [CSS]()
-- [JavaScript]()
-- API (open weather)
+- `HTML`
+- `CSS`
+- `JavaScript`
+- `API (open weather)`
 <!-- GETTING STARTED -->
 
 ## Getting Started
