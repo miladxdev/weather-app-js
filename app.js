@@ -1,6 +1,7 @@
 const elem = (e) => document.querySelector(e);
 
 const loader = elem("#loading");
+let skeletons = document.querySelectorAll(".skeleton");
 
 function displayLoading() {
   loader.classList.add("display");
@@ -8,16 +9,25 @@ function displayLoading() {
   setTimeout(() => {
     loader.classList.remove("display");
   }, 15000);
+
+  for (const skeleton of skeletons) {
+    skeleton.innerHTML = "";
+    skeleton.classList.add("skeleton-loader");
+  }
 }
 
 function hideLoading() {
   loader.classList.remove("display");
+
+  for (const skeleton of skeletons) {
+    skeleton.classList.remove("skeleton-loader");
+  }
 }
 
 function showError(message) {
   const status = document.getElementById("status");
-  status.style.opacity = ".9";
-  status.innerHTML = `<i class='fa fa-exclamation-circle'></i>  ${message}`;
+  status.style.opacity = ".7";
+  status.innerHTML = `<i class='fa fa-exclamation-circle'></i>   ${message}`;
   setTimeout(() => (status.style.opacity = "0"), 4000);
 }
 
@@ -26,8 +36,8 @@ function refreshAnimate() {
   let e = 1;
   for (let i = 0; i < details.length; i++) {
     details[i].style.opacity = "0.1";
-    setTimeout(() => (details[i].style.opacity = "1"), 150 * e);
-    e++;
+    setTimeout(() => (details[i].style.opacity = "1"), 100 * e);
+    e += 1.5;
   }
 }
 
@@ -50,9 +60,9 @@ let weather = {
     const { speed } = data.wind;
     const { country } = data.sys;
 
-    elem(".city").innerText = name;
-    elem(".temp").innerText = `${Math.floor(temp)}°C`;
-    elem("#w-icon").src = `http://openweathermap.org/img/wn/${icon}@4x.png`;
+    elem("#city").innerText = name;
+    elem("#temp").innerText = `${Math.floor(temp)}°C`;
+    elem("#w-icon").innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@4x.png" alt="weather-icon">`;
     elem("#feels-like").innerText = feels_like + " °C";
     elem("#country").innerText = country;
     elem("#humidity").innerText = humidity + "%";
@@ -61,7 +71,7 @@ let weather = {
     elem("#temp-min").innerText = temp_min + "°C";
     elem("#temp-max").innerText = temp_max + "°C";
     elem("#description").innerText = description;
-    // document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/daily?${description})`; //unsplash API
+
     hideLoading();
     refreshAnimate();
   },
@@ -80,6 +90,7 @@ let weather = {
         (err) => {
           console.error(err);
           showError("can't get current location");
+          this.fetchWeather("Isfahan");
         },
         { timeout: 15000 }
       );
@@ -90,6 +101,8 @@ let weather = {
 
   handleErrors: function (error) {
     hideLoading();
+
+    elem("#country").innerHTML = `<img class="error-img" src="./img/error.png">`;
 
     if (!navigator.onLine) {
       showError("you are offline");

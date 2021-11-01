@@ -10,12 +10,13 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <title>weather-app</title>
+    <title>weather app</title>
 </head>
 <body>
     <div class="card">
 
         <div id="status"></div>
+
         <div class="search">
             <input type="text" class="search-bar" placeholder="search"></input>
             <button><i class="fa fa-search"></i></button>
@@ -23,51 +24,48 @@
         </div>
 
         <div class="region">
-            
-            <h2 class="city">...</h2>
-            <span id="country">...</span>
+            <h2 id="city" class="skeleton skeleton-loader"></h2>
+            <p id="country" class="skeleton skeleton-loader "></p>
         </div>
         
         <div class="weather">
-            <div class="temp">...</div>
-            <div class="icon">
-                <img id="w-icon" src="http://openweathermap.org/img/wn/03n@4x.png" alt=""> 
-            </div>
+            <div id="temp" class="skeleton skeleton-loader"></div>
+            <div id="w-icon" class="skeleton skeleton-loader"></div>
         </div>
 
-        <small id="description">...</small>
+        <p id="description" class="skeleton skeleton-loader "></p>
         
         <div class="details">    
             <div>
                 <i class="fa fa-thermometer-three-quarters"></i>
                 <span>feels like</span>
-                <span  id="feels-like">...</span>
+                <span  id="feels-like" class="skeleton skeleton-loader "></span>
             </div>
             <div class="wind">
                 <i class="fa fa-wind"></i>
                 <span>wind</span>
-                <span id="wind">...</span>
+                <span id="wind" class="skeleton skeleton-loader"></span>
             </div>
             <div>
                 <i class="fa fa-arrow-up"></i>
                 <span>max temp</span>
-                <span id="temp-max">...</span>
+                <span id="temp-max" class="skeleton skeleton-loader "></span>
             </div>
             <div class="humidity">
                 <i class="fa fa-tint"></i>
                 <span>humidity</span>
-                <span id="humidity">...</span>
+                <span id="humidity" class="skeleton skeleton-loader "></span>
             </div>
             <div>
                 <i class="fa fa-tachometer-alt"></i>
                 <span>pressure</span>
-                <span id="pressure">...</span>
+                <span id="pressure" class="skeleton skeleton-loader "></span>
             </div>
             
             <div>
                 <i class="fa fa-arrow-down"></i>
                 <span>min temp</span>
-                <span id="temp-min">...</span>
+                <span id="temp-min" class="skeleton skeleton-loader "></span>
             </div>
         </div>
         

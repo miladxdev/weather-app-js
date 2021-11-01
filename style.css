@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 body {
@@ -16,33 +17,27 @@ body {
 
 .card {
   width: 420px;
-  height: 700px;
-  padding: 10px 20px;
+  padding: 2rem 1.5rem;
   border-radius: 40px;
   background: rgba(15, 15, 30, 0.1);
   font-size: 24px;
   color: white;
   text-align: center;
   backdrop-filter: blur(30px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   overflow: hidden;
 }
 
 #status {
-  /* border: 1px solid red; */
   position: absolute;
   top: 74px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
-  padding: 4px;
+  width: 74%;
+  padding: 4px 8px;
   border-radius: 8px;
   background: rgba(255, 63, 63, 0.4);
-  text-align: center;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0;
   color: white;
   transition: 0.5s;
@@ -50,6 +45,7 @@ body {
 
 .search {
   position: relative;
+  margin-bottom: 2rem;
 }
 .search-bar {
   position: relative;
@@ -68,13 +64,12 @@ body {
 .search-bar:hover,
 .search-bar:focus {
   opacity: 1;
-  background: rgba(15, 15, 30, 0.25);
+  background: rgba(15, 15, 30, 0.2);
 }
 
 .search button {
   position: absolute;
   right: 0px;
-  /* height: 40px; */
   padding: 8px 16px;
   border: none;
   border-radius: 20px;
@@ -85,27 +80,37 @@ body {
   cursor: pointer;
 }
 .search button:hover {
-  background: rgba(15, 15, 30, 0.25);
+  background: rgba(15, 15, 30, 0.2);
 }
 
-.city {
+.region {
+  margin-bottom: 2rem;
+}
+
+#city {
   font-size: 40px;
+  margin-bottom: 0.5rem;
 }
 
 .weather {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 120px;
+  margin-bottom: 2rem;
 }
 .weather .icon {
   position: absolute;
   right: 0;
   opacity: 0.9;
 }
+
 #description {
+  margin: 0 auto;
   font-size: 20px;
+  margin-bottom: 2rem;
 }
-.weather .temp {
+#temp {
   font-size: 90px;
 }
 
@@ -174,11 +179,36 @@ body {
   }
 }
 
-@keyframes success {
+/*  Skeleton loader */
+@keyframes skeleton {
   from {
-    color: lime;
+    background: rgba(138, 138, 138, 0.6);
   }
   to {
-    color: white;
+    background: rgba(138, 138, 138, 0.1);
   }
+}
+
+.skeleton-loader {
+  animation: skeleton 1s infinite alternate;
+  height: 1.5em;
+  width: 4em;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+#w-icon.skeleton-loader {
+  width: 100px;
+  height: 100px;
+  margin: 3.7rem 20px;
+  border-radius: 50%;
+}
+#temp.skeleton-loader {
+  font-size: 40px;
+  width: 50%;
+}
+.error-img {
+  width: 150px;
+  margin: 0.2rem 0;
+  filter: invert();
+  opacity: 0.7;
 }
