@@ -1,6 +1,6 @@
-const elem = (e) => document.querySelector(e);
+const element = (e) => document.querySelector(e);
 
-const loader = elem("#loading");
+const loader = element("#loading");
 let skeletons = document.querySelectorAll(".skeleton");
 
 function displayLoading() {
@@ -60,24 +60,24 @@ let weather = {
     const { speed } = data.wind;
     const { country } = data.sys;
 
-    elem("#city").innerText = name;
-    elem("#temp").innerText = `${Math.floor(temp)}°C`;
-    elem("#w-icon").innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@4x.png" alt="weather-icon">`;
-    elem("#feels-like").innerText = feels_like + " °C";
-    elem("#country").innerText = country;
-    elem("#humidity").innerText = humidity + "%";
-    elem("#wind").innerText = speed + " km/h";
-    elem("#pressure").innerText = pressure;
-    elem("#temp-min").innerText = temp_min + "°C";
-    elem("#temp-max").innerText = temp_max + "°C";
-    elem("#description").innerText = description;
+    element("#city").innerText = name;
+    element("#temp").innerText = `${Math.floor(temp)}°C`;
+    element("#w-icon").innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@4x.png" alt="weather-icon">`;
+    element("#feels-like").innerText = feels_like + " °C";
+    element("#country").innerText = country;
+    element("#humidity").innerText = humidity + "%";
+    element("#wind").innerText = speed + " km/h";
+    element("#pressure").innerText = pressure;
+    element("#temp-min").innerText = temp_min + "°C";
+    element("#temp-max").innerText = temp_max + "°C";
+    element("#description").innerText = description;
 
     hideLoading();
     refreshAnimate();
   },
 
   search: function () {
-    this.fetchWeather(elem(".search-bar").value);
+    this.fetchWeather(element(".search-bar").value);
   },
 
   getUserLocation: function () {
@@ -102,11 +102,11 @@ let weather = {
   handleErrors: function (error) {
     hideLoading();
 
-    elem("#country").innerHTML = `<img class="error-img" src="./img/error.png">`;
+    element("#country").innerHTML = `<img class="error-img" src="./img/error.png">`;
 
     if (!navigator.onLine) {
       showError("you are offline");
-    } else if (elem(".search-bar").value == "") {
+    } else if (element(".search-bar").value == "") {
       showError("search bar is empty");
     } else {
       showError("can't get data");
@@ -114,9 +114,9 @@ let weather = {
   },
 };
 
-elem(".search button").onclick = () => weather.search();
+element(".search button").onclick = () => weather.search();
 
-elem(".search-bar").onkeyup = (event) => {
+element(".search-bar").onkeyup = (event) => {
   if (event.key === "Enter") weather.search();
 };
 
