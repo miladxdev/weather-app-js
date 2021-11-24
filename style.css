@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-image: url("./img/bg/river.jpg");
+  background-image: url("./img/bg/sunset.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -19,11 +19,11 @@ body {
   width: 420px;
   padding: 2rem 1.5rem;
   border-radius: 40px;
-  background: rgba(15, 15, 30, 0.1);
+  background: rgba(15, 15, 30, 0.2);
   font-size: 24px;
   color: white;
   text-align: center;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(40px);
   overflow: hidden;
 }
 
@@ -214,9 +214,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-.card {
-width: 100%;
-height: 100%;
-border-radius: 0px;
-}
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
 }
